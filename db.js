@@ -3,12 +3,16 @@
 const mysql = require("mysql");
 
 var dbConfig = {
-    host:"localhost",
-    user:"root",
-    password:"",
-    database:"projectfour"
-};
+    host:"us-cdbr-east-03.cleardb.com",
+    user:"b29eebfb6587d8",
+    password:"eb9fdaea",
+    database:"heroku_28f7e683ee1119f"
 
+};
+// username : b29eebfb6587d8:
+// password : eb9fdaea
+// host: us-cdbr-east-03.cleardb.com
+// database : heroku_28f7e683ee1119f
 var connection;
 function handleDisconnect() {
     connection = mysql.createConnection(dbConfig);  // Recreate the connection, since the old one cannot be reused.

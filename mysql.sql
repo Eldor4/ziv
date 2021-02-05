@@ -68,22 +68,24 @@
 -- ALTER TABLE users ADD status text not null;
 -- ALTER TABLE shoppingcart ADD status text not null
 -- ALTER TABLE productcategory ADD  photo text;
--- ALTER TABLE productcategory DROP photo
+-- ALTER TABLE productcategory DROP photo;
 -- ALTER TABLE orders DROP city;
 -- ALTER TABLE orders ADD  city text not null;
 --  ALTER TABLE orders DROP street;
 --  ALTER TABLE orders ADD  street text not null
 
--- insert into product(productid, productname,categoryid, price, photo)
--- values(1111,'blah',1,22,'http://localhost:1444/public/3.jpeg'),
--- (1234,'b',1,12,'http://localhost:1444/public/4.jpeg'),
--- (2221,'bl',2,13,'http://localhost:1444/public/6.jpeg'),
--- (2222,'bla',2,13,'http://localhost:1444/public/7.jpeg'),
--- (2444,'bbla',2,13,'http://localhost:1444/public/9.jpg'),
--- (3333,'boola',1,13,'http://localhost:1444/public/5.jpg')
-
 -- insert into productcategory(productcode,categoryname)
 -- values(1,'shirts'),(2,'hats')
+
+-- insert into product(productid, productname,categoryid, price, photo)
+-- values(1111,'blah',1,22,'/public/3.jpeg'),
+-- (1234,'b',1,12,'/public/4.jpeg'),
+-- (2221,'bl',2,13,'/public/6.jpeg'),
+-- (2222,'bla',2,13,'/public/7.jpeg'),
+-- (2444,'bbla',2,13,'/public/9.jpg'),
+-- (3333,'boola',1,13,'/public/5.jpg')
+
+
 
 -- תיצור משתמש שבא לך  ותהפוך אותו לאדמין
 
