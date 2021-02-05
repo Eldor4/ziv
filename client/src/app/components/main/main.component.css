@@ -1,0 +1,19 @@
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+display: inline }
+
+.test{
+    background-color: rgb(46, 19, 145);
+   
+}
+.divMain{
+    height: 100%;
+    width: 45%;
+    position: relative;
+    display: inline-table;
+    margin-left: 2%;
+}
+mat-grid-list{
+    margin-top: 10px;
+}
+

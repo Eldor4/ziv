@@ -1,0 +1,112 @@
+<mat-sidenav-container *ngIf="us.loggedUser.role=='user'">
+
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">cart<app-cart></app-cart></mat-sidenav>
+    <mat-sidenav-content>
+        
+        <form [formGroup]="searchForm">
+            <mat-form-field>
+                <input type="text"  formControlName="productname" (keyup)="search()" matInput />
+                <mat-placeholder>Search</mat-placeholder>
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </form>
+        
+        <button class="btncart" *ngIf="!opened"(click)="opened=!opened">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <button class="btncartar" *ngIf="opened"(click)="opened=false">
+            <mat-icon>
+                keyboard_arrow_left
+            </mat-icon></button>
+       
+        <app-productcard></app-productcard>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>
+
+
+<!-- admin -->
+<mat-sidenav-container *ngIf="us.loggedUser.role=='admin'">
+    <mat-sidenav  #sidenav mode="side" [(opened)]="closed">
+        <button class="btncartpl" (click)="toformBtn()">
+            <mat-icon >
+                add
+            </mat-icon>
+        </button >
+        <!-- form Add -->
+        <div *ngIf="formadd==true">
+            <form  [formGroup]="theformAdd">
+                <mat-form-field> 
+                    <input  required placeholder="productid" formControlName="productid" matInput>
+                </mat-form-field>
+                <mat-form-field> 
+                    <input  required placeholder="productname" formControlName="productname" matInput>
+                </mat-form-field>
+                <mat-form-field>      
+                    <mat-select type="text" placeholder="category" formControlName="categoryid">  
+                        <mat-option>None</mat-option>   
+                        <ng-container *ngFor="let category of ys.category"> 
+                            <mat-option value="{{category.productcode}}">{{category.categoryname}}</mat-option> 
+                        </ng-container>
+                    </mat-select>
+                </mat-form-field> 
+                <mat-form-field> 
+                    <input   required placeholder="price" formControlName="price" matInput>
+                </mat-form-field>
+                <mat-form-field> 
+                    <input   required placeholder="photo" formControlName="photo" matInput>
+                </mat-form-field>
+                
+                <input color="primary" type="submit" value="Save" [disabled]="theformAdd.invalid" (click)="sendAdd()">
+            </form>
+            <!-- form Edit -->
+        </div>
+        <!-- במצב ונלחץ כפתור העריכה -->
+        <div *ngIf="this.as.editPanel.open==true ">
+            <form  [formGroup]="editForm">
+                <mat-form-field> 
+                    <input  required placeholder="productname" formControlName="productname" matInput>
+                </mat-form-field>
+                <mat-form-field>      
+                    <mat-select type="text" placeholder="category" formControlName="categoryid">  
+                        <mat-option>None</mat-option>   
+                        <ng-container *ngFor="let category of ys.category"> 
+                            <mat-option value="{{category.productcode}}">{{category.categoryname}}</mat-option> 
+                        </ng-container>
+                    </mat-select>
+                </mat-form-field> 
+                <mat-form-field> 
+                    <input   required placeholder="price" formControlName="price" matInput>
+                </mat-form-field>
+                <mat-form-field> 
+                    <input   required placeholder="photo" formControlName="photo" matInput>
+                </mat-form-field>
+                <input color="primary" type="submit" value="Edit" [disabled]="editForm.invalid" (click)="sendEdit($event)">
+            </form>
+        </div>
+        
+    </mat-sidenav>
+    <!-- *ngIf="us.loggedUser.role=='admin'" -->
+    <mat-sidenav-content >
+        
+        <form [formGroup]="searchForm">
+            <mat-form-field>
+                <input input type="text"  formControlName="productname" (keyup)="search()" matInput />
+                <mat-placeholder>Search</mat-placeholder>
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </form>
+        
+        <button class="btncart" *ngIf="closed"(click)="closed=opened">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <button class="btncart" *ngIf="!closed"(click)="closed=!closed">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+        
+     
+        <app-productcard></app-productcard>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>
+

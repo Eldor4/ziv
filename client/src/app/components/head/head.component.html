@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngIf="us.loggedUser.isLogged==true" (click)="logout()">
+          <mat-icon>logout</mat-icon>
+         
+        </button>
+        <button mat-menu-item disabled *ngIf="us.loggedUser.isLogged==false" >
+          <mat-icon>app_registration</mat-icon>
+         
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          
+        </button>
+      </mat-menu>
+       <mat-toolbar color="primary"  *ngIf="cs.showCtegory.open==true">
+         <a (click)="allProduct()"  class="cate">All</a>&nbsp;
+        <a *ngFor="let f of ys.category" (click)="bodekim(f)" class="cate">
+          {{f.categoryname}}&nbsp;
+      </a>
+</mat-toolbar>
+    <span>Ziv</span>
+  </mat-toolbar>

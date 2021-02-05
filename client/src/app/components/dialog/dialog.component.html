@@ -1,0 +1,12 @@
+
+<mat-dialog-content>
+<p>Hi {{data.p.productname}}</p>
+    <p>Amount:</p>
+</mat-dialog-content>
+    <mat-dialog-actions>
+        <button (click)="big()">+</button>
+        <p class="numOfProduct">{{numOfProduct}}</p><p> pcs </p>
+        <button [disabled]="numOfProduct<=0" (click)="little()" >-</button>
+        <br>
+    </mat-dialog-actions>
+<button mat-raised-button mat-dialog-close color="primary"(click)="bdika($event)" >Add</button>

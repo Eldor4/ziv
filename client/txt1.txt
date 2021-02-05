@@ -1,0 +1,1 @@
+const { userId, fname, admin, exp } = decode(localStorage.access_token)

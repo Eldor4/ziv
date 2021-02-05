@@ -1,0 +1,43 @@
+/* mat-sidenav-container{
+    width: 100%;
+    height: 100%;
+    
+} */
+
+mat-sidenav-content, mat-sidenav{
+    padding: 1%;
+    height: 50;
+    
+}
+mat-sidenav{
+    background-color: rgba(252, 252, 252, 0.5);
+    display: inline;
+    width:40%;
+    
+}
+app-cart{
+position: relative;
+display: inline;
+}
+
+app-productcard{
+    margin: 10px; 
+    position: relative;
+
+} 
+app-cart{
+    position: relative;
+}
+.btncart{
+/* border-radius: 50%; */
+background-color: #3f51b5;
+ /* position: fixed; */
+ left: 0;
+}
+.btncartar{
+   background-color: #3f51b5; 
+}
+.btncartpl{
+border-radius: 50%;
+background-color: #111e66;
+}

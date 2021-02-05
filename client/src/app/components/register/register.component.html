@@ -1,0 +1,72 @@
+<form [formGroup]="myForm" class="normal-form">
+    <mat-horizontal-stepper>
+        <mat-step label="Profile">
+            <div class="controlse-container">     
+            <mat-form-field>
+                <input  type="text" placeholder="Id" formControlName="id" matInput required (change)="checkId($event)"> 
+                <span *ngIf="myForm.controls.id.dirty && myForm.controls.id.errors?.required">id is required</span>
+                <span *ngIf="myForm.controls.id.dirty && !myForm.controls.id.errors?.required&&  myForm.controls.id.errors?.id">{{ myForm.controls.id.errors.id }}</span>
+                <span>{{spanId}}</span>
+                
+            </mat-form-field>  
+            <mat-form-field> 
+                <input type="email" placeholder="Email" formControlName="userName" required matInput>  
+                <span *ngIf="myForm.controls.userName.dirty&&myForm.controls.userName.invalid">Enter a valid email </span>
+            </mat-form-field> 
+            <mat-form-field>
+                <input type="password" placeholder="Password" formControlName="password" required matInput pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{6,})$">            
+              <div *ngIf="myForm.controls.password.dirty&&myForm.controls.password.errors?.pattern">
+                    <span >Passwords must contain
+                   <li>a minimum of 1 lower case letter</li>
+                   <li>a minimum of 1 upper case letter</li>
+                   <li>a minimum of 4 numeric character</li>
+                    </span>
+                </div>
+            </mat-form-field> 
+            <mat-form-field>      
+                <input type="password" placeholder="Confirm password" formControlName="confirmPassword" required (keyup)="checkPassSame()" matInput >
+                <span *ngIf="myForm.controls.confirmPassword.dirty&&myForm.value.password!=myForm.value.confirmPassword">{{passmsg}}</span> 
+            </mat-form-field>
+                <div>
+                <button mat-button matStepperNext 
+                [disabled]="myForm.controls.id.invalid||
+                myForm.controls.userName.invalid||
+                myForm.controls.password.invalid||
+                myForm.controls.confirmPassword.invalid||
+                myForm.value.password!=myForm.value.confirmPassword"
+                >Next</button>
+                </div>
+            </div> 
+            
+        </mat-step>
+        <mat-step label="fxc">
+            <div class="controlse-container">     
+            <mat-form-field>  
+                <input type="text" placeholder="First name" formControlName="fname" matInput>
+                <span *ngIf="myForm.controls.fname.dirty&&myForm.controls.fname.invalid">fname cannot be empty</span>
+            </mat-form-field>
+            <mat-form-field> 
+                <input type="text" placeholder="Last Name" formControlName="lmame" matInput>
+                <span *ngIf="myForm.controls.lmame.dirty&&myForm.controls.lmame.invalid">lname cannot be empty</span>
+            </mat-form-field> 
+                <mat-form-field>      
+                    <mat-select type="text" placeholder="City" formControlName="city">  
+                        <mat-option>None</mat-option>   
+                        <ng-container *ngFor="let city of citys"> 
+                            <mat-option value="{{city.value}}">{{city.value}}</mat-option> 
+                        </ng-container>
+                        <span *ngIf="myForm.controls.city.dirty&&myForm.controls.city.invalid">city cannot be empty</span>
+                    </mat-select>
+                </mat-form-field> 
+                <mat-form-field>
+                    <input type="text" placeholder="Street" formControlName="street" matInput>
+                    <span *ngIf="myForm.controls.street.dirty&&myForm.controls.street.invalid">street cannot be empty</span>
+                </mat-form-field> 
+                <div class="button-row">
+                    <input color="primary" type="submit" value="Register"  [disabled]="myForm.invalid" (click)="handleSubmit($event)" >
+                </div>  
+                
+            </div> 
+            </mat-step>
+    </mat-horizontal-stepper> 
+</form>

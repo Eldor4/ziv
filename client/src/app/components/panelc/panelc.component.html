@@ -1,0 +1,25 @@
+
+        <span>available products: {{ys.count}}</span>  
+     <br>
+     <div *ngIf="us.loggedUser.isLogged==true">
+      <div *ngIf="cs.status.status==''">
+         <h1>Hello {{us.loggedUser.fname}}</h1>
+      <p>  Welcome to your first purchase</p>
+         </div>
+         
+         <div *ngIf="cs.status.status=='open'">
+            <h1>Hello {{us.loggedUser.fname}}</h1>
+            <p> You have an active cart from date:</p>
+            <p>{{cs.status.productiondate |  date :'fullDate'}}</p>
+            <p>The purchase amount so far: {{cs.cartsum}}</p>
+         </div>
+         
+         <div *ngIf="cs.status.status=='close'">
+            <h1>Hello {{us.loggedUser.fname}}</h1>
+            
+            <p>{{cs.status.productiondate |  date :'fullDate'}}</p>
+         </div>
+
+      </div>
+   
+  

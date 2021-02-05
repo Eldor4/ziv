@@ -1,0 +1,29 @@
+
+ 
+    <table class="wsl" >
+        <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Amount</th>
+        <th>Totul</th>
+    </tr>
+        <tr *ngFor="let it of cs.cartitem">
+            <td class="deleteTd" (click)="deletepro($event,it)"><span class="material-icons">
+                clear
+                </span></td>
+            <td>{{it.productname}}</td>
+            <td>{{it.price}}</td>
+            <td>{{it.Amount}}</td>
+            <td>{{it.generalprice}}</td>
+        </tr>
+        <tr>
+            <td>sum:</td>
+            <td>{{cs.cartsum}}</td>
+        </tr>
+    </table>
+
+<button mat-button color="warn" (click)="deletecart()" ><mat-icon>delete</mat-icon></button>
+<button mat-raised-button color="primary" (click)="goToOrder()"><mat-icon>credit_card</mat-icon></button>
+
+  

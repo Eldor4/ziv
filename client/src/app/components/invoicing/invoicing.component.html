@@ -1,0 +1,36 @@
+
+ <!-- <form [formGroup]="searchForm">
+    <mat-form-field>
+        <input type="text"  formControlName="productname" (keyup)="search()" matInput />
+        <mat-placeholder>Search</mat-placeholder>
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+</form> -->
+
+
+<mat-icon matSuffix>search</mat-icon>
+<input  type="text" placeholder="Search"  [(ngModel)]="nameOfProduct" (input)="mark()" class="search" matInput>
+
+<table class="wsl" id='tabl'>
+    <tr>
+    <th>Name</th>
+    <th>Itemprice</th>
+    <th>Amount</th>
+    <th>Totl Price</th>
+</tr>
+    <tr *ngFor="let it of cs.cartitem">
+        <td >{{it.productname}}</td>
+        <td >{{it.price}}</td>
+        <td>{{it.Amount}}</td>
+        <td>{{it.generalprice}}</td>
+    </tr>
+    <tr>
+        <td>sum:</td>
+        <td>{{cs.cartsum}}</td>
+    </tr>
+</table>
+
+<button class="doownload" *ngIf="cs.openDiv.open==true" (click)="doownload()"><span class="material-icons">
+    save_alt
+    </span></button>
+<!-- <button (click)="backToSore()">Back</button> -->
