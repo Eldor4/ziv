@@ -1,8 +1,8 @@
 <mat-toolbar class="toolbar_shopping">
-    <a (click)="allProduct()"  class="cate">All Products</a>&nbsp;
-   <a *ngFor="let f of ys.category" (click)="categoryChange(f)" class="cate">
+    <button mat-raised-button (click)="allProduct()"  class="cate">All Products</button>&nbsp;
+   <button mat-raised-button *ngFor="let f of ys.category" (click)="categoryChange(f)" class="cate">
      {{f.categoryname}}&nbsp;
- </a>
+   </button>
 </mat-toolbar>
 <mat-sidenav-container *ngIf="us.loggedUser.role=='user'">
 
