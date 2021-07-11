@@ -33,7 +33,7 @@
 
 <!-- admin -->
 <mat-sidenav-container *ngIf="us.loggedUser.role=='admin'">
-    <mat-sidenav   #sidenav mode="side" [(opened)]="!opened">
+    <mat-sidenav   #sidenav mode="side" [(opened)]="opened">
        <button mat-raised-button color="primary" class="mat_butoon" (click)="toformBtn()">
             <mat-icon >
                 add
@@ -103,11 +103,13 @@
             </mat-form-field>
         </form>
         
-        <button class="btncart" *ngIf="closed"(click)="closed=opened">
-            <mat-icon>keyboard_arrow_left</mat-icon>
+        <button class="btncart" *ngIf="!opened"(click)="opened=!opened">
+            <mat-icon>shopping_cart</mat-icon>
         </button>
-        <button class="btncart" *ngIf="!closed"(click)="closed=!closed">
-            <mat-icon>keyboard_arrow_right</mat-icon>
+        <button class="btncartar" *ngIf="opened"(click)="opened=false">
+            <mat-icon>
+                keyboard_arrow_left
+            </mat-icon>
         </button>
         
      
