@@ -2306,7 +2306,7 @@ function ShoppingpageComponent_button_3_Template(rf, ctx) { if (rf & 1) {
 } }
 function ShoppingpageComponent_mat_sidenav_container_5_button_13_Template(rf, ctx) { if (rf & 1) {
     const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_mat_sidenav_container_5_button_13_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r9.opened = !ctx_r9.opened; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-icon");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "shopping_cart");
@@ -2315,7 +2315,7 @@ function ShoppingpageComponent_mat_sidenav_container_5_button_13_Template(rf, ct
 } }
 function ShoppingpageComponent_mat_sidenav_container_5_button_14_Template(rf, ctx) { if (rf & 1) {
     const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_mat_sidenav_container_5_button_14_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r11.opened = false; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-icon");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " keyboard_arrow_left ");
@@ -2324,28 +2324,28 @@ function ShoppingpageComponent_mat_sidenav_container_5_button_14_Template(rf, ct
 } }
 function ShoppingpageComponent_mat_sidenav_container_5_Template(rf, ctx) { if (rf & 1) {
     const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-sidenav-container");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-sidenav", 4, 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-sidenav-container", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-sidenav", 6, 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("openedChange", function ShoppingpageComponent_mat_sidenav_container_5_Template_mat_sidenav_openedChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r13.opened = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "cart");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "app-cart");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-sidenav-content");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "form", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-sidenav-content", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "form", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "input", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "input", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("keyup", function ShoppingpageComponent_mat_sidenav_container_5_Template_input_keyup_8_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r15.search(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "mat-placeholder");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Search");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-icon", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-icon", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "search");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, ShoppingpageComponent_mat_sidenav_container_5_button_13_Template, 3, 0, "button", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, ShoppingpageComponent_mat_sidenav_container_5_button_14_Template, 3, 0, "button", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, ShoppingpageComponent_mat_sidenav_container_5_button_13_Template, 3, 0, "button", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, ShoppingpageComponent_mat_sidenav_container_5_button_14_Template, 3, 0, "button", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "app-productcard");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2362,7 +2362,7 @@ function ShoppingpageComponent_mat_sidenav_container_5_Template(rf, ctx) { if (r
 } }
 function ShoppingpageComponent_mat_sidenav_container_6_div_6_ng_container_10_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-option", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-option", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
@@ -2376,28 +2376,28 @@ function ShoppingpageComponent_mat_sidenav_container_6_div_6_ng_container_10_Tem
 function ShoppingpageComponent_mat_sidenav_container_6_div_6_Template(rf, ctx) { if (rf & 1) {
     const _r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "input", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "input", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "input", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "input", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "mat-select", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "mat-select", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-option");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "None");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, ShoppingpageComponent_mat_sidenav_container_6_div_6_ng_container_10_Template, 3, 2, "ng-container", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, ShoppingpageComponent_mat_sidenav_container_6_div_6_ng_container_10_Template, 3, 2, "ng-container", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "input", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "input", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "input", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "input", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "input", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "input", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_mat_sidenav_container_6_div_6_Template_input_click_15_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r24); const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r23.sendAdd(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2413,7 +2413,7 @@ function ShoppingpageComponent_mat_sidenav_container_6_div_6_Template(rf, ctx) {
 } }
 function ShoppingpageComponent_mat_sidenav_container_6_div_7_ng_container_8_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-option", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-option", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
@@ -2427,25 +2427,25 @@ function ShoppingpageComponent_mat_sidenav_container_6_div_7_ng_container_8_Temp
 function ShoppingpageComponent_mat_sidenav_container_6_div_7_Template(rf, ctx) { if (rf & 1) {
     const _r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "input", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "input", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-select", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-select", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-option");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "None");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, ShoppingpageComponent_mat_sidenav_container_6_div_7_ng_container_8_Template, 3, 2, "ng-container", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, ShoppingpageComponent_mat_sidenav_container_6_div_7_ng_container_8_Template, 3, 2, "ng-container", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "input", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "input", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "input", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "input", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "input", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "input", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_mat_sidenav_container_6_div_7_Template_input_click_13_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28); const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r27.sendEdit($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2461,7 +2461,7 @@ function ShoppingpageComponent_mat_sidenav_container_6_div_7_Template(rf, ctx) {
 } }
 function ShoppingpageComponent_mat_sidenav_container_6_button_16_Template(rf, ctx) { if (rf & 1) {
     const _r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_mat_sidenav_container_6_button_16_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r30); const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r29.closed = ctx_r29.opened; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-icon");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "keyboard_arrow_left");
@@ -2470,7 +2470,7 @@ function ShoppingpageComponent_mat_sidenav_container_6_button_16_Template(rf, ct
 } }
 function ShoppingpageComponent_mat_sidenav_container_6_button_17_Template(rf, ctx) { if (rf & 1) {
     const _r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_mat_sidenav_container_6_button_17_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r32); const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r31.closed = !ctx_r31.closed; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-icon");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "keyboard_arrow_right");
@@ -2480,7 +2480,7 @@ function ShoppingpageComponent_mat_sidenav_container_6_button_17_Template(rf, ct
 function ShoppingpageComponent_mat_sidenav_container_6_Template(rf, ctx) { if (rf & 1) {
     const _r34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-sidenav-container");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-sidenav", 4, 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-sidenav", 16, 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("openedChange", function ShoppingpageComponent_mat_sidenav_container_6_Template_mat_sidenav_openedChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r34); const ctx_r33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r33.closed = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_mat_sidenav_container_6_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r34); const ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r35.toformBtn(); });
@@ -2488,25 +2488,25 @@ function ShoppingpageComponent_mat_sidenav_container_6_Template(rf, ctx) { if (r
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " add ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ShoppingpageComponent_mat_sidenav_container_6_div_6_Template, 16, 3, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, ShoppingpageComponent_mat_sidenav_container_6_div_7_Template, 14, 3, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ShoppingpageComponent_mat_sidenav_container_6_div_6_Template, 16, 3, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, ShoppingpageComponent_mat_sidenav_container_6_div_7_Template, 14, 3, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-sidenav-content");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "form", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "form", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-form-field");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "input", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "input", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("keyup", function ShoppingpageComponent_mat_sidenav_container_6_Template_input_keyup_11_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r34); const ctx_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r36.search(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-placeholder");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Search");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "mat-icon", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "mat-icon", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "search");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](16, ShoppingpageComponent_mat_sidenav_container_6_button_16_Template, 3, 0, "button", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, ShoppingpageComponent_mat_sidenav_container_6_button_17_Template, 3, 0, "button", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](16, ShoppingpageComponent_mat_sidenav_container_6_button_16_Template, 3, 0, "button", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, ShoppingpageComponent_mat_sidenav_container_6_button_17_Template, 3, 0, "button", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "app-productcard");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2611,7 +2611,7 @@ class ShoppingpageComponent {
     }
 }
 ShoppingpageComponent.ɵfac = function ShoppingpageComponent_Factory(t) { return new (t || ShoppingpageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_users_service__WEBPACK_IMPORTED_MODULE_3__["UsersService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_admin_service__WEBPACK_IMPORTED_MODULE_4__["AdminService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_products_service__WEBPACK_IMPORTED_MODULE_5__["ProductsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_cart_service__WEBPACK_IMPORTED_MODULE_6__["CartService"])); };
-ShoppingpageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ShoppingpageComponent, selectors: [["app-shoppingpage"]], decls: 7, vars: 3, consts: [[1, "toolbar_shopping"], ["mat-raised-button", "", "color", "primary", 1, "mat_butoon", 3, "click"], ["mat-raised-button", "", "color", "primary", "class", "mat_butoon", 3, "click", 4, "ngFor", "ngForOf"], [4, "ngIf"], ["mode", "side", 3, "opened", "openedChange"], ["sidenav", ""], [3, "formGroup"], ["type", "text", "formControlName", "productname", "matInput", "", 3, "keyup"], ["matSuffix", ""], ["class", "btncart", 3, "click", 4, "ngIf"], ["class", "btncartar", 3, "click", 4, "ngIf"], [1, "btncart", 3, "click"], [1, "btncartar", 3, "click"], ["input", "", "type", "text", "formControlName", "productname", "matInput", "", 3, "keyup"], [1, "admin_form", 3, "formGroup"], ["required", "", "placeholder", "productid", "formControlName", "productid", "matInput", ""], ["required", "", "placeholder", "productname", "formControlName", "productname", "matInput", ""], ["type", "text", "placeholder", "category", "formControlName", "categoryid"], [4, "ngFor", "ngForOf"], ["required", "", "placeholder", "price", "formControlName", "price", "matInput", ""], ["required", "", "placeholder", "photo", "formControlName", "photo", "matInput", ""], ["color", "primary", "type", "submit", "value", "Save", 3, "disabled", "click"], [3, "value"], ["color", "primary", "type", "submit", "value", "Edit", 3, "disabled", "click"]], template: function ShoppingpageComponent_Template(rf, ctx) { if (rf & 1) {
+ShoppingpageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ShoppingpageComponent, selectors: [["app-shoppingpage"]], decls: 7, vars: 3, consts: [[1, "toolbar_shopping"], ["mat-raised-button", "", "color", "primary", 1, "mat_butoon", 3, "click"], ["mat-raised-button", "", "color", "primary", "class", "mat_butoon", 3, "click", 4, "ngFor", "ngForOf"], ["class", "flexdiv", 4, "ngIf"], [4, "ngIf"], [1, "flexdiv"], ["mode", "side", 1, "paneldiv", 3, "opened", "openedChange"], ["sidenav", ""], [1, "paneldiv"], [3, "formGroup"], ["type", "text", "formControlName", "productname", "matInput", "", 3, "keyup"], ["matSuffix", ""], ["class", "btncart", 3, "click", 4, "ngIf"], ["class", "btncartar", 3, "click", 4, "ngIf"], [1, "btncart", 3, "click"], [1, "btncartar", 3, "click"], ["mode", "side", 3, "opened", "openedChange"], ["input", "", "type", "text", "formControlName", "productname", "matInput", "", 3, "keyup"], [1, "admin_form", 3, "formGroup"], ["required", "", "placeholder", "productid", "formControlName", "productid", "matInput", ""], ["required", "", "placeholder", "productname", "formControlName", "productname", "matInput", ""], ["type", "text", "placeholder", "category", "formControlName", "categoryid"], [4, "ngFor", "ngForOf"], ["required", "", "placeholder", "price", "formControlName", "price", "matInput", ""], ["required", "", "placeholder", "photo", "formControlName", "photo", "matInput", ""], ["color", "primary", "type", "submit", "value", "Save", 3, "disabled", "click"], [3, "value"], ["color", "primary", "type", "submit", "value", "Edit", 3, "disabled", "click"]], template: function ShoppingpageComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-toolbar", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ShoppingpageComponent_Template_button_click_1_listener() { return ctx.allProduct(); });
@@ -2621,7 +2621,7 @@ ShoppingpageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "\u00A0\n");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, ShoppingpageComponent_mat_sidenav_container_5_Template, 16, 4, "mat-sidenav-container", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ShoppingpageComponent_mat_sidenav_container_6_Template, 19, 6, "mat-sidenav-container", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ShoppingpageComponent_mat_sidenav_container_6_Template, 19, 6, "mat-sidenav-container", 4);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.ys.category);
@@ -2629,7 +2629,7 @@ ShoppingpageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.us.loggedUser.role == "user");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.us.loggedUser.role == "admin");
-    } }, styles: [".toolbar_shopping[_ngcontent-%COMP%]{\r\n    background-color:#4c5baf;\r\n    font-size: 26px;\r\n}\r\n.mat_butoon[_ngcontent-%COMP%]{\r\n    background-color:#4c5baf;\r\n    border: black 0.5px solid;\r\n    font-family: 'Yomogi', cursive;\r\n    margin: 5px;\r\n}\r\nmat-sidenav-content[_ngcontent-%COMP%], mat-sidenav[_ngcontent-%COMP%]{\r\n    padding: 1%;\r\n    height: 50;\r\n    \r\n}\r\nmat-sidenav[_ngcontent-%COMP%]{\r\n    background-color: rgba(252, 252, 252, 0.5);\r\n    display: inline;\r\n    width:40%;\r\n    \r\n}\r\napp-cart[_ngcontent-%COMP%]{\r\nposition: relative;\r\ndisplay: inline;\r\n}\r\napp-productcard[_ngcontent-%COMP%]{\r\n    margin: 10px; \r\n    position: relative;\r\n\r\n}\r\napp-cart[_ngcontent-%COMP%]{\r\n    position: relative;\r\n}\r\n.btncart[_ngcontent-%COMP%]{\r\n\r\nbackground-color: #3f51b5;\r\n \r\n left: 0;\r\n}\r\n.btncartar[_ngcontent-%COMP%]{\r\n   background-color: #3f51b5; \r\n}\r\n.btncartpl[_ngcontent-%COMP%]{\r\nborder-radius: 50%;\r\nbackground-color: #111e66;\r\n}\r\n.admin_form[_ngcontent-%COMP%]{\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-evenly;\r\n    align-items: center;\r\n    border: black  0.5px solid;\r\n    border-radius: 4%;\r\n    margin: 5px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNob3BwaW5ncGFnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7O0dBSUc7QUFDSDtJQUNJLHdCQUF3QjtJQUN4QixlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3QkFBd0I7SUFDeEIseUJBQXlCO0lBQ3pCLDhCQUE4QjtJQUM5QixXQUFXO0FBQ2Y7QUFFQTtJQUNJLFdBQVc7SUFDWCxVQUFVOztBQUVkO0FBQ0E7SUFDSSwwQ0FBMEM7SUFDMUMsZUFBZTtJQUNmLFNBQVM7O0FBRWI7QUFDQTtBQUNBLGtCQUFrQjtBQUNsQixlQUFlO0FBQ2Y7QUFFQTtJQUNJLFlBQVk7SUFDWixrQkFBa0I7O0FBRXRCO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFDQTtBQUNBLHdCQUF3QjtBQUN4Qix5QkFBeUI7Q0FDeEIscUJBQXFCO0NBQ3JCLE9BQU87QUFDUjtBQUNBO0dBQ0cseUJBQXlCO0FBQzVCO0FBQ0E7QUFDQSxrQkFBa0I7QUFDbEIseUJBQXlCO0FBQ3pCO0FBRUE7SUFDSSxZQUFZO0lBQ1osYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0lBQ25CLDBCQUEwQjtJQUMxQixpQkFBaUI7SUFDakIsV0FBVztBQUNmIiwiZmlsZSI6InNob3BwaW5ncGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogbWF0LXNpZGVuYXYtY29udGFpbmVye1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBcclxufSAqL1xyXG4udG9vbGJhcl9zaG9wcGluZ3tcclxuICAgIGJhY2tncm91bmQtY29sb3I6IzRjNWJhZjtcclxuICAgIGZvbnQtc2l6ZTogMjZweDtcclxufVxyXG4ubWF0X2J1dG9vbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IzRjNWJhZjtcclxuICAgIGJvcmRlcjogYmxhY2sgMC41cHggc29saWQ7XHJcbiAgICBmb250LWZhbWlseTogJ1lvbW9naScsIGN1cnNpdmU7XHJcbiAgICBtYXJnaW46IDVweDtcclxufVxyXG5cclxubWF0LXNpZGVuYXYtY29udGVudCwgbWF0LXNpZGVuYXZ7XHJcbiAgICBwYWRkaW5nOiAxJTtcclxuICAgIGhlaWdodDogNTA7XHJcbiAgICBcclxufVxyXG5tYXQtc2lkZW5hdntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjUyLCAyNTIsIDI1MiwgMC41KTtcclxuICAgIGRpc3BsYXk6IGlubGluZTtcclxuICAgIHdpZHRoOjQwJTtcclxuICAgIFxyXG59XHJcbmFwcC1jYXJ0e1xyXG5wb3NpdGlvbjogcmVsYXRpdmU7XHJcbmRpc3BsYXk6IGlubGluZTtcclxufVxyXG5cclxuYXBwLXByb2R1Y3RjYXJke1xyXG4gICAgbWFyZ2luOiAxMHB4OyBcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuXHJcbn0gXHJcbmFwcC1jYXJ0e1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcbi5idG5jYXJ0e1xyXG4vKiBib3JkZXItcmFkaXVzOiA1MCU7ICovXHJcbmJhY2tncm91bmQtY29sb3I6ICMzZjUxYjU7XHJcbiAvKiBwb3NpdGlvbjogZml4ZWQ7ICovXHJcbiBsZWZ0OiAwO1xyXG59XHJcbi5idG5jYXJ0YXJ7XHJcbiAgIGJhY2tncm91bmQtY29sb3I6ICMzZjUxYjU7IFxyXG59XHJcbi5idG5jYXJ0cGx7XHJcbmJvcmRlci1yYWRpdXM6IDUwJTtcclxuYmFja2dyb3VuZC1jb2xvcjogIzExMWU2NjtcclxufVxyXG5cclxuLmFkbWluX2Zvcm17XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGJvcmRlcjogYmxhY2sgIDAuNXB4IHNvbGlkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNCU7XHJcbiAgICBtYXJnaW46IDVweDtcclxufSJdfQ== */"] });
+    } }, styles: [".toolbar_shopping[_ngcontent-%COMP%]{\r\n    background-color:#4c5baf;\r\n    font-size: 26px;\r\n}\r\n.mat_butoon[_ngcontent-%COMP%]{\r\n    background-color:#4c5baf;\r\n    border: black 0.5px solid;\r\n    font-family: 'Yomogi', cursive;\r\n    margin: 5px;\r\n}\r\n\r\n.flexdiv[_ngcontent-%COMP%]{\r\n    margin: 5%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    \r\n}\r\n.paneldiv[_ngcontent-%COMP%]{\r\n    flex: 1;\r\n    height: 100%;\r\n    margin: 5%;\r\n}\r\n@media screen and (max-width:760px){\r\n    .flexdiv[_ngcontent-%COMP%]{\r\n      flex-direction: column;\r\n    }\r\n}\r\napp-cart[_ngcontent-%COMP%]{\r\nposition: relative;\r\ndisplay: inline;\r\n}\r\napp-productcard[_ngcontent-%COMP%]{\r\n    margin: 10px; \r\n    position: relative;\r\n\r\n}\r\napp-cart[_ngcontent-%COMP%]{\r\n    position: relative;\r\n}\r\n.btncart[_ngcontent-%COMP%]{\r\n\r\nbackground-color: #3f51b5;\r\n \r\n left: 0;\r\n}\r\n.btncartar[_ngcontent-%COMP%]{\r\n   background-color: #3f51b5; \r\n}\r\n.btncartpl[_ngcontent-%COMP%]{\r\nborder-radius: 50%;\r\nbackground-color: #111e66;\r\n}\r\n.admin_form[_ngcontent-%COMP%]{\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-evenly;\r\n    align-items: center;\r\n    border: black  0.5px solid;\r\n    border-radius: 4%;\r\n    margin: 5px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNob3BwaW5ncGFnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7O0dBSUc7QUFDSDtJQUNJLHdCQUF3QjtJQUN4QixlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3QkFBd0I7SUFDeEIseUJBQXlCO0lBQ3pCLDhCQUE4QjtJQUM5QixXQUFXO0FBQ2Y7QUFFQTs7Ozs7Ozs7OztHQVVHO0FBQ0g7SUFDSSxVQUFVO0lBQ1YsYUFBYTtJQUNiLG1CQUFtQjs7QUFFdkI7QUFDQTtJQUNJLE9BQU87SUFDUCxZQUFZO0lBQ1osVUFBVTtBQUNkO0FBRUE7SUFDSTtNQUNFLHNCQUFzQjtJQUN4QjtBQUNKO0FBQ0E7QUFDQSxrQkFBa0I7QUFDbEIsZUFBZTtBQUNmO0FBRUE7SUFDSSxZQUFZO0lBQ1osa0JBQWtCOztBQUV0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7QUFDQSx3QkFBd0I7QUFDeEIseUJBQXlCO0NBQ3hCLHFCQUFxQjtDQUNyQixPQUFPO0FBQ1I7QUFDQTtHQUNHLHlCQUF5QjtBQUM1QjtBQUNBO0FBQ0Esa0JBQWtCO0FBQ2xCLHlCQUF5QjtBQUN6QjtBQUVBO0lBQ0ksWUFBWTtJQUNaLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLG1CQUFtQjtJQUNuQiwwQkFBMEI7SUFDMUIsaUJBQWlCO0lBQ2pCLFdBQVc7QUFDZiIsImZpbGUiOiJzaG9wcGluZ3BhZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIG1hdC1zaWRlbmF2LWNvbnRhaW5lcntcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgXHJcbn0gKi9cclxuLnRvb2xiYXJfc2hvcHBpbmd7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiM0YzViYWY7XHJcbiAgICBmb250LXNpemU6IDI2cHg7XHJcbn1cclxuLm1hdF9idXRvb257XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiM0YzViYWY7XHJcbiAgICBib3JkZXI6IGJsYWNrIDAuNXB4IHNvbGlkO1xyXG4gICAgZm9udC1mYW1pbHk6ICdZb21vZ2knLCBjdXJzaXZlO1xyXG4gICAgbWFyZ2luOiA1cHg7XHJcbn1cclxuXHJcbi8qIG1hdC1zaWRlbmF2LWNvbnRlbnQsIG1hdC1zaWRlbmF2e1xyXG4gICAgcGFkZGluZzogMSU7XHJcbiAgICBoZWlnaHQ6IDUwO1xyXG4gICAgXHJcbn1cclxubWF0LXNpZGVuYXZ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1MiwgMjUyLCAyNTIsIDAuNSk7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmU7XHJcbiAgICB3aWR0aDo0MCU7XHJcbiAgICBcclxufSAqL1xyXG4uZmxleGRpdntcclxuICAgIG1hcmdpbjogNSU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIFxyXG59XHJcbi5wYW5lbGRpdntcclxuICAgIGZsZXg6IDE7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBtYXJnaW46IDUlO1xyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjc2MHB4KXtcclxuICAgIC5mbGV4ZGl2e1xyXG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG59XHJcbmFwcC1jYXJ0e1xyXG5wb3NpdGlvbjogcmVsYXRpdmU7XHJcbmRpc3BsYXk6IGlubGluZTtcclxufVxyXG5cclxuYXBwLXByb2R1Y3RjYXJke1xyXG4gICAgbWFyZ2luOiAxMHB4OyBcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuXHJcbn0gXHJcbmFwcC1jYXJ0e1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcbi5idG5jYXJ0e1xyXG4vKiBib3JkZXItcmFkaXVzOiA1MCU7ICovXHJcbmJhY2tncm91bmQtY29sb3I6ICMzZjUxYjU7XHJcbiAvKiBwb3NpdGlvbjogZml4ZWQ7ICovXHJcbiBsZWZ0OiAwO1xyXG59XHJcbi5idG5jYXJ0YXJ7XHJcbiAgIGJhY2tncm91bmQtY29sb3I6ICMzZjUxYjU7IFxyXG59XHJcbi5idG5jYXJ0cGx7XHJcbmJvcmRlci1yYWRpdXM6IDUwJTtcclxuYmFja2dyb3VuZC1jb2xvcjogIzExMWU2NjtcclxufVxyXG5cclxuLmFkbWluX2Zvcm17XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGJvcmRlcjogYmxhY2sgIDAuNXB4IHNvbGlkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNCU7XHJcbiAgICBtYXJnaW46IDVweDtcclxufSJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ShoppingpageComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
