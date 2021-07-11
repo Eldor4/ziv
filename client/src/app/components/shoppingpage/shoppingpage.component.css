@@ -3,6 +3,11 @@
     height: 100%;
     
 } */
+.mat-toolbar{
+    background-color:#4c5baf;
+    font-size: 26px;
+    font-family: 'Yomogi', cursive;
+}
 
 mat-sidenav-content, mat-sidenav{
     padding: 1%;
