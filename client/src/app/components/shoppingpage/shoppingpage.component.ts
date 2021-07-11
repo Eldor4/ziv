@@ -94,6 +94,14 @@ export class ShoppingpageComponent implements OnInit {
       )
   }
 
+  categoryChange(f) {
+    this.ys.getProductByCategory(f.productcode).subscribe(
+      (res: any) => {
+        this.ys.allproduct = res
+      },
+      err => console.log(err)
+    )
+  }
  
   
   toOrderPage() {

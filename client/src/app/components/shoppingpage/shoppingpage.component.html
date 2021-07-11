@@ -1,3 +1,9 @@
+<mat-toolbar color="primary"  >
+   
+   <a *ngFor="let f of ys.category" (click)="bodekim(f)" class="cate">
+     {{f.categoryname}}&nbsp;
+ </a>
+</mat-toolbar>
 <mat-sidenav-container *ngIf="us.loggedUser.role=='user'">
 
     <mat-sidenav #sidenav mode="side" [(opened)]="opened">cart<app-cart></app-cart></mat-sidenav>
