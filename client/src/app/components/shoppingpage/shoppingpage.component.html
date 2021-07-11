@@ -42,7 +42,8 @@
         </button >
         <!-- form Add -->
         <div *ngIf="formadd==true">
-            <form  [formGroup]="theformAdd">
+            <form  [formGroup]="theformAdd" class="admin_form">
+                <H1>ADD</H1>
                 <mat-form-field> 
                     <input  required placeholder="productid" formControlName="productid" matInput>
                 </mat-form-field>
@@ -70,7 +71,8 @@
         </div>
         <!-- במצב ונלחץ כפתור העריכה -->
         <div *ngIf="this.as.editPanel.open==true ">
-            <form  [formGroup]="editForm">
+            <form  [formGroup]="editForm" class="admin_form">
+                <h1>EDIT</h1>
                 <mat-form-field> 
                     <input  required placeholder="productname" formControlName="productname" matInput>
                 </mat-form-field>
