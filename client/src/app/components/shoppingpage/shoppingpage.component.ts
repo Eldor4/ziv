@@ -136,7 +136,7 @@ export class ShoppingpageComponent implements OnInit {
       (res: any) => {
         this.showProduct()
         console.log(res)
-        this.as.editPanel.open = false
+        this.as.opened.open = false
       },
       err => console.log(err)
     )

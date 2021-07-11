@@ -2067,7 +2067,7 @@ class ProductcardComponent {
         this.fb = fb;
         this.bodek = [];
         //פונקציה לפתיחת פאנל עריכה
-        this.editPanel = {
+        this.opened = {
             open: true
         };
     }
@@ -2096,8 +2096,8 @@ class ProductcardComponent {
         this.openEdit();
     }
     openEdit() {
-        this.as.editPanel.open = this.editPanel.open,
-            console.log(this.as.editPanel.open);
+        this.as.opened.open = this.opened.open,
+            console.log(this.as.opened.open);
     }
 }
 ProductcardComponent.ɵfac = function ProductcardComponent_Factory(t) { return new (t || ProductcardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_users_service__WEBPACK_IMPORTED_MODULE_2__["UsersService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_products_service__WEBPACK_IMPORTED_MODULE_3__["ProductsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_admin_service__WEBPACK_IMPORTED_MODULE_4__["AdminService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_cart_service__WEBPACK_IMPORTED_MODULE_5__["CartService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialog"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormBuilder"])); };
@@ -2611,7 +2611,7 @@ class ShoppingpageComponent {
         this.as.adminEdit(this.as.moveTo).subscribe((res) => {
             this.showProduct();
             console.log(res);
-            this.as.editPanel.open = false;
+            this.as.opened.open = false;
         }, err => console.log(err));
     }
 }
@@ -2903,7 +2903,7 @@ class AdminService {
         this.http = http;
         this.r = r;
         //פתיחת פאנל עריכה מוגדר סגור כברירת מחדל
-        this.editPanel = {
+        this.opened = {
             open: false
         };
         this.moveTo = {
