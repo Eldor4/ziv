@@ -49,7 +49,7 @@ mat-grid-tile {
 
 .example-card {
     max-width: 160px;
-    max-height: 160px;
+    max-height: 250px;
     
     position: relative;
     display: inline-block;
