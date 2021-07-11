@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   height: 100%;
   width: 100%;
@@ -17,4 +17,15 @@ a {
 a:hover {
   text-decoration: underline;
   cursor: pointer;
+} */
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+   
+  
+.header {
+    background-color:#4c5baf;
+    font-size: 26px;
+    font-family: 'Bellefair', serif
 }
