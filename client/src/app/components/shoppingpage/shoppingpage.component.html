@@ -34,7 +34,8 @@
 <!-- admin -->
 <mat-sidenav-container *ngIf="us.loggedUser.role=='admin'">
     <mat-sidenav  #sidenav mode="side" [(opened)]="closed">
-        <button class="btncartpl" (click)="toformBtn()">
+        <button mat-raised-button color="primary" class="mat_butoon" (click)="toformBtn()">
+            הוספת מוצר
             <mat-icon >
                 add
             </mat-icon>
