@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AdminService {
   //פתיחת פאנל עריכה מוגדר סגור כברירת מחדל
-  opened = {
+  editPanel = {
     open: false
   }
   moveTo = {

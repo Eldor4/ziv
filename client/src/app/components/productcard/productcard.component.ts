@@ -61,11 +61,11 @@ openDialog(p){
 }
 
 //פונקציה לפתיחת פאנל עריכה
-opened={
+editPanel={
   open:true}
 openEdit(){
-  this.as.opened.open=this.opened.open,
-  console.log( this.as.opened.open)
+  this.as.editPanel.open=this.editPanel.open,
+  console.log( this.as.editPanel.open)
   
 
 }
