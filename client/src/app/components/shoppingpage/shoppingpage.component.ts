@@ -79,7 +79,7 @@ export class ShoppingpageComponent implements OnInit {
   }
 
   toformBtn() {
-    this.formadd = false
+    this.formadd = true
   }
   sendAdd() {
     console.log(this.theformAdd.value)

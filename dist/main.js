@@ -2569,7 +2569,7 @@ class ShoppingpageComponent {
         }, err => console.log(err));
     }
     toformBtn() {
-        this.formadd = false;
+        this.formadd = true;
     }
     sendAdd() {
         console.log(this.theformAdd.value);
