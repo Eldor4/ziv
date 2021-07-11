@@ -8,14 +8,13 @@
             <p>  Welcome to your first purchase</p>
           </div>
         </div>
-        Hello {{us.loggedUser.fname}}</mat-card-title>
+        </mat-card-title>
         <div mat-card-avatar class="example-header-image"></div>
       </mat-card-header>
       <img mat-card-image src="/public/1.jpeg" alt="logo of ziv" />
       <mat-card-content>  
       <div *ngIf="us.loggedUser.isLogged==true">
       <div *ngIf="cs.status.status=='open'">
-        <h1>Hello {{us.loggedUser.fname}}</h1>
         <p> You have an active cart from date:</p>
         <p>{{cs.status.productiondate |  date :'fullDate'}}</p>
         <p>The purchase amount so far: {{cs.cartsum}}</p>
