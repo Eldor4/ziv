@@ -29,7 +29,7 @@ mat-grid-list{
  } */
 
  .flexdiv{
-    margin-top: 5%;
+    margin: 5%;
     display: flex;
     flex-direction: row;
     
@@ -37,4 +37,10 @@ mat-grid-list{
 .paneldiv{
     flex: 1;
     height: 100%;
+}
+
+@media screen and (max-width:760px){
+    .flexdiv{
+      flex-direction: column;
+    }
 }
