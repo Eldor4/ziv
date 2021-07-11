@@ -33,7 +33,7 @@ router.post("/register", async (req, res) => {
         const salt = genSaltSync(10);
         const hasht = hashSync(password, salt);
           let q = `INSERT INTO users (id, role, fname, lmame, userName, password,city, street,status)
-    VALUES(?,"admin",?,?,?,?,?,?,'new')`;
+    VALUES(?,"user",?,?,?,?,?,?,'new')`;
           let results = Query(q, [id, fname, lmame, userName , hasht ,city, street, city]);
           
             res.status(201).json({ error: false, msg: "user add" });
