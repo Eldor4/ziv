@@ -8,6 +8,11 @@
             <p>  Welcome to your first purchase</p>
           </div>
         </div>
+        <div *ngIf="us.loggedUser.isLogged==true">
+          <div *ngIf="cs.status.status=='open'">
+            <h1>Hello {{us.loggedUser.fname}}</h1>
+          </div>
+        </div>
         </mat-card-title>
         <div mat-card-avatar class="example-header-image"></div>
       </mat-card-header>
