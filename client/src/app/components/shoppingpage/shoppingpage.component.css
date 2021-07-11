@@ -48,9 +48,8 @@ display: inline;
 }
 
 app-productcard{
-    margin: 10px; 
-    position: relative;
-
+    width: 100%; 
+    height: 100%; 
 } 
 app-cart{
     width: 100%; 
