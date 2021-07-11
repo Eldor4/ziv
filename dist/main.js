@@ -2722,7 +2722,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function PanelcComponent_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
+function PanelcComponent_div_16_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -2736,7 +2736,7 @@ function PanelcComponent_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Hello ", ctx_r1.us.loggedUser.fname, "");
 } }
-function PanelcComponent_div_7_div_2_Template(rf, ctx) { if (rf & 1) {
+function PanelcComponent_div_16_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -2761,7 +2761,7 @@ function PanelcComponent_div_7_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("The purchase amount so far: ", ctx_r2.cs.cartsum, "");
 } }
-function PanelcComponent_div_7_div_3_Template(rf, ctx) { if (rf & 1) {
+function PanelcComponent_div_16_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -2778,11 +2778,11 @@ function PanelcComponent_div_7_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](5, 2, ctx_r3.cs.status.productiondate, "fullDate"));
 } }
-function PanelcComponent_div_7_Template(rf, ctx) { if (rf & 1) {
+function PanelcComponent_div_16_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PanelcComponent_div_7_div_1_Template, 5, 1, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, PanelcComponent_div_7_div_2_Template, 10, 6, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, PanelcComponent_div_7_div_3_Template, 6, 5, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, PanelcComponent_div_16_div_1_Template, 5, 1, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, PanelcComponent_div_16_div_2_Template, 10, 6, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, PanelcComponent_div_16_div_3_Template, 6, 5, "div", 2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -2803,20 +2803,31 @@ class PanelcComponent {
     }
 }
 PanelcComponent.ɵfac = function PanelcComponent_Factory(t) { return new (t || PanelcComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_users_service__WEBPACK_IMPORTED_MODULE_1__["UsersService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_products_service__WEBPACK_IMPORTED_MODULE_2__["ProductsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_cart_service__WEBPACK_IMPORTED_MODULE_3__["CartService"])); };
-PanelcComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PanelcComponent, selectors: [["app-panelc"]], decls: 8, vars: 2, consts: [[1, "info"], [1, "david"], [4, "ngIf"]], template: function PanelcComponent_Template(rf, ctx) { if (rf & 1) {
+PanelcComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PanelcComponent, selectors: [["app-panelc"]], decls: 17, vars: 2, consts: [[1, "info"], [1, "david"], [4, "ngIf"]], template: function PanelcComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "\u05DE\u05D5\u05E6\u05E8\u05D9\u05DD \u05D6\u05DE\u05D9\u05E0\u05D9\u05DD: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "...\u05E7\u05E6\u05EA \u05E2\u05DC\u05D9\u05E0\u05D5 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " \u05D0\u05E0\u05D5 \u05D7\u05D1\u05E8\u05D4 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9\u05EA , \u05E9\u05E9\u05DE\u05D4 \u05DC\u05D4 \u05DE\u05D8\u05E8\u05D4 \u05DC\u05D9\u05D9\u05E6\u05E8 \u05DC\u05DE\u05E9\u05E4\u05D7\u05D5\u05EA \u05D0\u05D7\u05E8\u05D5\u05EA \u05D6\u05DE\u05DF \u05D0\u05D9\u05DB\u05D5\u05EA \u05DE\u05E9\u05D5\u05EA\u05E3. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, PanelcComponent_div_7_Template, 4, 3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "\n\u05DE\u05E2\u05D1\u05E8 \u05DC\u05DE\u05E9\u05D7\u05E7\u05D9\u05DD \u05E9\u05EA\u05D9\u05DB\u05E0\u05E0\u05D5 \u05E2\u05D1\u05D5\u05E8\u05DB\u05DD \u05EA\u05D5\u05DB\u05DC\u05D5 \u05DC\u05D4\u05E0\u05D5\u05EA \u05DE\u05D4\u05D7\u05D5\u05D5\u05D9\u05D4 \u05E9\u05DC \u05D1\u05D7\u05D9\u05E8\u05EA \u05D4\u05EA\u05DE\u05D5\u05E0\u05D5\u05EA \u05D5\u05D4\u05E2\u05D9\u05E6\u05D5\u05D1 \u05D1\u05E6\u05D5\u05D5\u05EA\u05D0.\n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "\n\u05DB\u05DE\u05D5 \u05DB\u05DF \u05EA\u05D5\u05DB\u05DC\u05D5 \u05DC\u05D1\u05D7\u05D5\u05E8 \u05D1\u05D0\u05EA\u05E8 \u05DE\u05D2\u05D5\u05D5\u05DF \u05E8\u05D7\u05D1 \u05E9\u05DC \u05DE\u05D6\u05DB\u05E8\u05D5\u05EA \u05D5\u05DE\u05EA\u05E0\u05D5\u05EA \u05DC\u05DB\u05DC \u05D4\u05DE\u05E9\u05E4\u05D7\u05D4. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "h1", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "\u05DE\u05D5\u05E6\u05E8\u05D9\u05DD \u05D6\u05DE\u05D9\u05E0\u05D9\u05DD: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](16, PanelcComponent_div_16_Template, 4, 3, "div", 2);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx.ys.count, " \u05D7\u05D7\u05E2\u05D0");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.us.loggedUser.isLogged == true);
