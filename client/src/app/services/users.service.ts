@@ -41,16 +41,4 @@ export class UsersService {
     }
     )
   }
-  // let res = await fetch("http://localhost:1501/vacation/add", {
-  //   method: "post",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     "Authorization": localStorage.token
-  //   }
-
-
-
-
-
-
 }
