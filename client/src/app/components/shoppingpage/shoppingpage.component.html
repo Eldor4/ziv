@@ -1,6 +1,6 @@
 <mat-toolbar class="toolbar_shopping">
-    <button mat-raised-button class="mat_butoon" (click)="allProduct()" >All Products</button>&nbsp;
-   <button mat-raised-button class="mat_butoon"*ngFor="let f of ys.category" (click)="categoryChange(f)">
+    <button mat-raised-button color="primary" class="mat_butoon" (click)="allProduct()" >All Products</button>&nbsp;
+   <button mat-raised-button color="primary" class="mat_butoon"*ngFor="let f of ys.category" (click)="categoryChange(f)">
      {{f.categoryname}}&nbsp;
    </button>&nbsp;
 </mat-toolbar>
