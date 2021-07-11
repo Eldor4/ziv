@@ -2,7 +2,7 @@
     <button mat-raised-button class="mat_butoon" (click)="allProduct()"  class="cate">All Products</button>&nbsp;
    <button mat-raised-button class="mat_butoon"*ngFor="let f of ys.category" (click)="categoryChange(f)" class="cate">
      {{f.categoryname}}&nbsp;
-   </button>
+   </button>&nbsp;
 </mat-toolbar>
 <mat-sidenav-container *ngIf="us.loggedUser.role=='user'">
 
