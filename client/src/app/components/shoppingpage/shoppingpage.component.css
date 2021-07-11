@@ -11,7 +11,7 @@
     background-color:#4c5baf;
     border: black 0.5px solid;
     font-family: 'Yomogi', cursive;
-    margin-left: 5px;
+    margin: 5px;
 }
 
 mat-sidenav-content, mat-sidenav{
