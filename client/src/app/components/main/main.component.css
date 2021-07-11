@@ -37,6 +37,7 @@ mat-grid-list{
 .paneldiv{
     flex: 1;
     height: 100%;
+    margin: 5%;
 }
 
 @media screen and (max-width:760px){
