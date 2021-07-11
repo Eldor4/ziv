@@ -3,14 +3,7 @@
    <button mat-raised-button color="primary" class="mat_butoon"*ngFor="let f of ys.category" (click)="categoryChange(f)">
      {{f.categoryname}}
    </button>&nbsp;
-   
 </mat-toolbar>
-<button mat-raised-button color="primary" class="mat_butoon" (click)="toformBtn()">
-    הוספת מוצר
-    <mat-icon >
-        add
-    </mat-icon>
-</button >
 <mat-sidenav-container *ngIf="us.loggedUser.role=='user'">
 
     <mat-sidenav #sidenav mode="side" [(opened)]="opened">cart<app-cart></app-cart></mat-sidenav>
@@ -41,7 +34,12 @@
 <!-- admin -->
 <mat-sidenav-container *ngIf="us.loggedUser.role=='admin'">
     <mat-sidenav  #sidenav mode="side" [(opened)]="closed">
-      
+        <button mat-raised-button color="primary" class="mat_butoon" (click)="toformBtn()">
+            הוספת מוצר
+            <mat-icon >
+                add
+            </mat-icon>
+        </button >
         <!-- form Add -->
         <div *ngIf="formadd==true">
             <form  [formGroup]="theformAdd">
