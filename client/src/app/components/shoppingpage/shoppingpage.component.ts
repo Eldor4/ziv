@@ -102,6 +102,15 @@ export class ShoppingpageComponent implements OnInit {
       err => console.log(err)
     )
   }
+
+  allProduct(){
+    this.ys.productall().subscribe(
+      (res: any) => {
+        this.ys.allproduct = res
+      },
+      err => console.log(err)
+    )
+  }
  
   
   toOrderPage() {

@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
-   
-   <a *ngFor="let f of ys.category" (click)="bodekim(f)" class="cate">
+    <a (click)="allProduct()"  class="cate">All</a>&nbsp;
+   <a *ngFor="let f of ys.category" (click)="categoryChange(f)" class="cate">
      {{f.categoryname}}&nbsp;
  </a>
 </mat-toolbar>
