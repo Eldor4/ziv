@@ -4,10 +4,10 @@
      {{f.categoryname}}
    </button>&nbsp;
 </mat-toolbar>
-<mat-sidenav-container *ngIf="us.loggedUser.role=='user'" class="flexdiv">
+<mat-sidenav-container *ngIf="us.loggedUser.role=='user'">
 
-    <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="paneldiv">cart<app-cart></app-cart></mat-sidenav>
-    <mat-sidenav-content class="paneldiv">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" >cart<app-cart></app-cart></mat-sidenav>
+    <mat-sidenav-content>
         
         <form [formGroup]="searchForm">
             <mat-form-field>
