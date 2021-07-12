@@ -38,14 +38,14 @@ export class CartComponent implements OnInit {
           }
         )
       },
-      err => console.log(err),
+   //   err => console.log(err),
     )
     this.cs.getcartSum(this.cs.status.cartid).subscribe(
       (res: any) => {
         this.cs.cartsum = res[0].sum
       },
       err => {
-        console.log(err)
+   //     console.log(err)
       }
     )
 
@@ -68,7 +68,7 @@ export class CartComponent implements OnInit {
         this.cs.cartitem = res
         this.sum()
       },
-      err => console.log(err)
+     // err => console.log(err)
     )
   }
   deletecart() {
@@ -78,7 +78,7 @@ export class CartComponent implements OnInit {
         this.cs.cartitem = res
         this.sum()
       },
-      err => console.log(err)
+      //err => console.log(err)
     )
   }
   goToOrder() {

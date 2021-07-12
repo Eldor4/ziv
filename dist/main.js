@@ -545,11 +545,11 @@ class CartComponent {
             this.cs.getcartitem(this.cs.status.cartid).subscribe((res) => {
                 this.cs.cartitem = res;
             });
-        }, err => console.log(err));
+        });
         this.cs.getcartSum(this.cs.status.cartid).subscribe((res) => {
             this.cs.cartsum = res[0].sum;
         }, err => {
-            console.log(err);
+            //     console.log(err)
         });
     }
     sum() {
@@ -565,14 +565,14 @@ class CartComponent {
         this.cs.deletepro(this.cs.id).subscribe((res) => {
             this.cs.cartitem = res;
             this.sum();
-        }, err => console.log(err));
+        });
     }
     deletecart() {
         this.cs.cart.cart = this.us.loggedUser.cartid;
         this.cs.deletecart(this.cs.cart).subscribe((res) => {
             this.cs.cartitem = res;
             this.sum();
-        }, err => console.log(err));
+        });
     }
     goToOrder() {
         this.r.navigateByUrl('order');
