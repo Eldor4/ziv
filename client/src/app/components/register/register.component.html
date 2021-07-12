@@ -1,6 +1,6 @@
 <form [formGroup]="myForm" class="normal-form">
     <mat-horizontal-stepper>
-        <mat-step label="Profile">
+        <mat-step label="Step 1">
             <div class="controlse-container">     
             <mat-form-field>
                 <input  type="text" placeholder="Id" formControlName="id" matInput required (change)="checkId($event)"> 
@@ -39,7 +39,7 @@
             </div> 
             
         </mat-step>
-        <mat-step label="fxc">
+        <mat-step label="Step 2">
             <div class="controlse-container">     
             <mat-form-field>  
                 <input type="text" placeholder="First name" formControlName="fname" matInput>

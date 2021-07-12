@@ -64,25 +64,5 @@ export class UsersService {
   toCheckId(toid) {
     return this.http.get(this.baseUrl + '/idregistertest/' + toid)
   }
-  // id=localStorage.token.id
-  // userLogin(id){
-  //   console.log(id)
-  //     return this.http.get(this.loginuserUrl+ id,  {
-  //     headers: { "Content-Type": "application/json",
-  //     "Authorization":  sessionStorage.token}
-  //   }
-  //     )
-  // }
-  // let res = await fetch("http://localhost:1501/vacation/add", {
-  //   method: "post",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     "Authorization": localStorage.token
-  //   }
-
-
-
-
-
 
 }
