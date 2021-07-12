@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { UsersService } from 'src/app/servers/users.service';
 import { CartService } from 'src/app/servers/cart.service';
 import israeliIdValidator from 'src/app/validators/israelild';
+import { backgroundClip } from 'html2canvas/dist/types/css/property-descriptors/background-clip';
 //import { CompareDirective } from 'src/app/validators/apssword';
 
 
@@ -114,6 +115,12 @@ export class RegisterComponent implements OnInit {
         )
       }
       
+
+      back(){
+        this.r.navigateByUrl('')
+      }
  }
+
+
 
 // fname, lname, username, password  ,city, street
