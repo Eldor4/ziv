@@ -55,9 +55,9 @@ export class CartComponent implements OnInit {
       (res: any) => {
         this.cs.cartsum = res[0].sum
       },
-      err => {
-        console.log(err)
-      }
+      // err => {
+      //   console.log(err)
+      // }
     )
   }
   deletepro(e, it) {

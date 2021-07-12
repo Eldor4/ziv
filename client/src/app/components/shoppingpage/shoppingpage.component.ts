@@ -38,7 +38,7 @@ export class ShoppingpageComponent implements OnInit {
   ngOnInit(): void {
     this.showcategory()
     this.showProduct()
-    console.log(this.ys.category)
+    // console.log(this.ys.category)
     this.cs.showCtegory.open=true
     this.theformAdd = this.fb.group({
       productid: ['', Validators.required],
@@ -64,7 +64,7 @@ export class ShoppingpageComponent implements OnInit {
     this.ys.productall().subscribe(
       (res: any) => {
         this.ys.allproduct = res
-        console.log(this.ys.allproduct)
+        // console.log(this.ys.allproduct)
       },
       err => console.log(err)
     )
@@ -74,7 +74,7 @@ export class ShoppingpageComponent implements OnInit {
       (res: any) => {
         this.ys.category = res
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
 
@@ -82,15 +82,15 @@ export class ShoppingpageComponent implements OnInit {
     this.formadd = true
   }
   sendAdd() {
-    console.log(this.theformAdd.value)
+    // console.log(this.theformAdd.value)
     this.as.adminAdd(
       this.theformAdd.value).subscribe(
         (res: any) => {
           this.showProduct()
-          console.log(res),
+          // console.log(res),
             this.formadd = false
         },
-        err => console.log(err)
+        // err => console.log(err)
       )
   }
 
@@ -99,7 +99,7 @@ export class ShoppingpageComponent implements OnInit {
       (res: any) => {
         this.ys.allproduct = res
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
 
@@ -108,7 +108,7 @@ export class ShoppingpageComponent implements OnInit {
       (res: any) => {
         this.ys.allproduct = res
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
  
@@ -123,7 +123,7 @@ export class ShoppingpageComponent implements OnInit {
       (res: any) => {
         this.ys.allproduct = res
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
   sendEdit(event) {
@@ -138,7 +138,7 @@ export class ShoppingpageComponent implements OnInit {
         console.log(res)
         this.as.editPanel.open = false
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
 

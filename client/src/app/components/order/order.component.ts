@@ -85,7 +85,7 @@ export class OrderComponent implements OnInit {
         this.sum = res[0].sum
       },
       err => {
-        console.log(err)
+        // console.log(err)
       }
     )
 
@@ -104,10 +104,10 @@ export class OrderComponent implements OnInit {
         // console.log(res)
         this.ps.counterOfDate = res.map(e => new Date(e.orderdate).getTime())
         this.or = this.ps.counterOfDate
-        console.log(this.or)
+        // console.log(this.or)
       },
       err => {
-        console.log(err)
+        // console.log(err)
       }
     )
     // counterOfDate={
@@ -143,14 +143,14 @@ export class OrderComponent implements OnInit {
       (res: any) => {
         console.log(res)
       },
-      err => { console.log(err) }
+      // err => { console.log(err) }
     )
 
     this.cs.deletecart({ cart: this.cart.acrt }).subscribe(
       (res: any) => {
-        console.log(res)
+        // console.log(res)
       },
-      err => { console.log(err) }
+      // err => { console.log(err) }
     )
     this.cs.toOrder.userid = this.us.loggedUser.id
     this.cs.toOrder.cart = this.cart.acrt
@@ -185,7 +185,7 @@ backToOrder(){
 }
   downloadPDF(){
     this.cs.openDiv.open=true
-    console.log(this.cs.openDiv.open)
+    // console.log(this.cs.openDiv.open)
   }
 
   backToSore(){

@@ -43,7 +43,7 @@ export class UsersService {
       headers: { "Content-Type": "application/json" }
     })
   }
-  
+
   userid
   toCheckId(toid) {
     return this.http.get(this.baseUrl + '/tt/' + toid)
@@ -66,7 +66,7 @@ export class UsersService {
 
   // id=localStorage.token.id
   userLogin(id) {
-    console.log(id)
+    // console.log(id)
     return this.http.get(this.loginuserUrl + id, {
       headers: {
         "Content-Type": "application/json",

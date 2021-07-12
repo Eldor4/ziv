@@ -92,7 +92,7 @@ router.post('/changestatustoclose', verifyUser, async (req, res) => {
     set status = 'close'
     WHERE ? =cartid`)
     let respons = await Query(q, [cartid])
-    console.log(q)
+    // console.log(q)
     res.json(respons)
   } catch (error) {
     res.send(error)
@@ -172,7 +172,7 @@ router.post('/deleteproduct', verifyUser, async (req, res) => {
     res.json(responss)
 
   } catch (error) {
-    console.log(error)
+    // console.log(error)
   }
 })
 //Delete all cart  pruducts
@@ -191,7 +191,7 @@ router.post('/deletecart', verifyUser, async (req, res) => {
     res.json(responss)
 
   } catch (error) {
-    console.log(error)
+    // console.log(error)
   }
 })
 
@@ -205,7 +205,7 @@ router.get('/countdate', async(req, res) => {
       // res.json(threeOrders)
 
       //console.log(result)
-  console.log(q)
+  // console.log(q)
     res.json(result,'ddd')
   } catch (error) {
       res.sendStatus(500)

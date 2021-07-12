@@ -229,12 +229,12 @@ class DialogComponent {
             this.cs.addTocart.Amount = this.numOfProduct,
             this.cs.addTocart.generalprice = this.data.p.price * this.numOfProduct,
             this.cs.addTocart.cart = this.us.loggedUser.cartid,
-            console.log(this.cs.addTocart);
-        this.cs.toNewProInCart(this.cs.addTocart).subscribe((res) => {
-            console.log(res);
-            this.cs.cartitem = res;
-            this.sum();
-        }, err => console.log(err));
+            //  console.log(this.cs.addTocart);
+            this.cs.toNewProInCart(this.cs.addTocart).subscribe((res) => {
+                // console.log(res)
+                this.cs.cartitem = res;
+                this.sum();
+            });
     }
     sum() {
         this.cs.getcartSum(this.cs.status.cartid).subscribe((res) => {
@@ -334,11 +334,11 @@ class MainComponent {
     }
     tocount() {
         this.ys.productcatcount().subscribe((res) => {
-            var _a, _b;
+            var _a;
             this.ys.count = (_a = res[0]) === null || _a === void 0 ? void 0 : _a.amount;
             // console.log(res[0].amount)
-            console.log((_b = this.us) === null || _b === void 0 ? void 0 : _b.loggedUser);
-        }, err => console.log(err));
+            // console.log(this.us?.loggedUser)
+        });
     }
 }
 MainComponent.ɵfac = function MainComponent_Factory(t) { return new (t || MainComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_products_service__WEBPACK_IMPORTED_MODULE_2__["ProductsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_users_service__WEBPACK_IMPORTED_MODULE_3__["UsersService"])); };
@@ -555,8 +555,6 @@ class CartComponent {
     sum() {
         this.cs.getcartSum(this.cs.status.cartid).subscribe((res) => {
             this.cs.cartsum = res[0].sum;
-        }, err => {
-            console.log(err);
         });
     }
     deletepro(e, it) {
@@ -686,12 +684,12 @@ class HeadComponent {
     bodekim(f) {
         this.ys.getProductByCategory(f.productcode).subscribe((res) => {
             this.ys.allproduct = res;
-        }, err => console.log(err));
+        });
     }
     allProduct() {
         this.ys.productall().subscribe((res) => {
             this.ys.allproduct = res;
-        }, err => console.log(err));
+        });
     }
     logout() {
         this.us.logout();
@@ -933,7 +931,7 @@ class LoginComponent {
     toNewShoppingpage() {
         this.cs.changeStatusToOpenn({ cartid: this.cs.status.cartid }).subscribe((res) => {
             this.cs.showCtegory.open == true;
-        }, err => console.log(err)),
+        }),
             this.r.navigateByUrl('shopping');
     }
     //לקבל מהשרת את העגלה האחרונה עם סטטוס/תראיך וכו   
@@ -948,7 +946,7 @@ class LoginComponent {
         this.cs.getcartSum(this.cs.status.cartid).subscribe((res) => {
             this.cs.cartsum = res[0].sum;
         }, err => {
-            console.log(err);
+            // console.log(err)
         });
     }
 }
@@ -1142,7 +1140,7 @@ class RegisterComponent {
         }
     }
     handleSubmit(e) {
-        console.log(this.myForm.value);
+        // console.log(this.myForm.value)
         this.us.register(this.myForm.value).subscribe(res => {
             console.log(res);
             this.newcart(),
@@ -1155,7 +1153,7 @@ class RegisterComponent {
     checkId(evevn) {
         //console.log(this.myForm.value.id);
         this.us.toCheckId(this.myForm.value.id).subscribe(res => {
-            console.log(res);
+            //  console.log(res)
             if (res == 'notgood') {
                 // alert('This ID already exists. You can login with a password'),
                 this.spanId = 'This ID already exists. You can login with a password',
@@ -1165,13 +1163,13 @@ class RegisterComponent {
             else if (res == 'good') {
                 this.spanId = '';
             }
-            console.log(this.spanId);
-        }, error => console.log(error));
+            // console.log(this.spanId)
+        });
     }
     newcart() {
         this.cs.newCart.userid = this.myForm.value.id;
         this.cs.newshoppingcart(this.cs.newCart).subscribe((res) => {
-        }, err => console.log(err));
+        });
     }
     back() {
         this.r.navigateByUrl('');
@@ -1431,7 +1429,7 @@ class OrderComponent {
         this.cs.getcartSum(this.cs.status.cartid).subscribe((res) => {
             this.sum = res[0].sum;
         }, err => {
-            console.log(err);
+            // console.log(err)
         });
         this.orderForm = this.fb.group({
             city: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -1443,9 +1441,9 @@ class OrderComponent {
             // console.log(res)
             this.ps.counterOfDate = res.map(e => new Date(e.orderdate).getTime());
             this.or = this.ps.counterOfDate;
-            console.log(this.or);
+            // console.log(this.or)
         }, err => {
-            console.log(err);
+            // console.log(err)
         });
         // counterOfDate={
         //   counter:0,
@@ -1475,10 +1473,10 @@ class OrderComponent {
         this.datetToSql();
         this.cs.changeStatusToClosee({ cartid: this.cart.acrt }).subscribe((res) => {
             console.log(res);
-        }, err => { console.log(err); });
+        });
         this.cs.deletecart({ cart: this.cart.acrt }).subscribe((res) => {
-            console.log(res);
-        }, err => { console.log(err); });
+            // console.log(res)
+        });
         this.cs.toOrder.userid = this.us.loggedUser.id;
         this.cs.toOrder.cart = this.cart.acrt;
         this.cs.toOrder.amounttopay = this.sum;
@@ -1497,7 +1495,7 @@ class OrderComponent {
     }
     downloadPDF() {
         this.cs.openDiv.open = true;
-        console.log(this.cs.openDiv.open);
+        // console.log(this.cs.openDiv.open)
     }
     backToSore() {
         this.r.navigateByUrl('shopping');
@@ -2201,12 +2199,12 @@ class ProductcardComponent {
         this.ys.toAddProductByAdmin.categoryid = p.categoryid;
         this.ys.toAddProductByAdmin.price = p.price;
         this.ys.toAddProductByAdmin.photo = p.photo;
-        console.log(this.ys.toAddProductByAdmin);
+        // console.log(this.ys.toAddProductByAdmin)
         this.openEdit();
     }
     openEdit() {
-        this.as.editPanel.open = this.editPanel.open,
-            console.log(this.as.editPanel.open);
+        this.as.editPanel.open = this.editPanel.open;
+        // console.log( this.as.editPanel.open)
     }
 }
 ProductcardComponent.ɵfac = function ProductcardComponent_Factory(t) { return new (t || ProductcardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_users_service__WEBPACK_IMPORTED_MODULE_2__["UsersService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_products_service__WEBPACK_IMPORTED_MODULE_3__["ProductsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_admin_service__WEBPACK_IMPORTED_MODULE_4__["AdminService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_cart_service__WEBPACK_IMPORTED_MODULE_5__["CartService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__["MatDialog"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormBuilder"])); };
@@ -2303,12 +2301,12 @@ class InvoicingComponent {
         this.cs = cs;
     }
     ngOnInit() {
-        console.log(this.cs.cartitem);
+        (this.cs.cartitem);
     }
     doownload() {
         let table = document.getElementById('tabl');
         html2canvas__WEBPACK_IMPORTED_MODULE_2___default()(table).then((canvas) => {
-            console.log(canvas);
+            // console.log(canvas)
             let imgData = canvas.toDataURL('image/png');
             let doc = new jspdf__WEBPACK_IMPORTED_MODULE_1__["jsPDF"]();
             doc.addImage(imgData, 0, 0, 200, 200);
@@ -2660,7 +2658,7 @@ class ShoppingpageComponent {
     ngOnInit() {
         this.showcategory();
         this.showProduct();
-        console.log(this.ys.category);
+        // console.log(this.ys.category)
         this.cs.showCtegory.open = true;
         this.theformAdd = this.fb.group({
             productid: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -2680,34 +2678,34 @@ class ShoppingpageComponent {
     showProduct() {
         this.ys.productall().subscribe((res) => {
             this.ys.allproduct = res;
-            console.log(this.ys.allproduct);
+            // console.log(this.ys.allproduct)
         }, err => console.log(err));
     }
     showcategory() {
         this.ys.tocategory().subscribe((res) => {
             this.ys.category = res;
-        }, err => console.log(err));
+        });
     }
     toformBtn() {
         this.formadd = true;
     }
     sendAdd() {
-        console.log(this.theformAdd.value);
+        // console.log(this.theformAdd.value)
         this.as.adminAdd(this.theformAdd.value).subscribe((res) => {
             this.showProduct();
-            console.log(res),
-                this.formadd = false;
-        }, err => console.log(err));
+            // console.log(res),
+            this.formadd = false;
+        });
     }
     categoryChange(f) {
         this.ys.getProductByCategory(f.productcode).subscribe((res) => {
             this.ys.allproduct = res;
-        }, err => console.log(err));
+        });
     }
     allProduct() {
         this.ys.productall().subscribe((res) => {
             this.ys.allproduct = res;
-        }, err => console.log(err));
+        });
     }
     toOrderPage() {
         this.r.navigateByUrl('invoicing');
@@ -2715,7 +2713,7 @@ class ShoppingpageComponent {
     search() {
         this.ys.search(this.searchForm.value).subscribe((res) => {
             this.ys.allproduct = res;
-        }, err => console.log(err));
+        });
     }
     sendEdit(event) {
         this.as.moveTo.productid = this.ys.toAddProductByAdmin.productid;
@@ -2727,7 +2725,7 @@ class ShoppingpageComponent {
             this.showProduct();
             console.log(res);
             this.as.editPanel.open = false;
-        }, err => console.log(err));
+        });
     }
 }
 ShoppingpageComponent.ɵfac = function ShoppingpageComponent_Factory(t) { return new (t || ShoppingpageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_users_service__WEBPACK_IMPORTED_MODULE_3__["UsersService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_admin_service__WEBPACK_IMPORTED_MODULE_4__["AdminService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_products_service__WEBPACK_IMPORTED_MODULE_5__["ProductsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servers_cart_service__WEBPACK_IMPORTED_MODULE_6__["CartService"])); };

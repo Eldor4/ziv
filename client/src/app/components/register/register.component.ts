@@ -76,7 +76,7 @@ export class RegisterComponent implements OnInit {
       
       
       handleSubmit(e){
-    console.log(this.myForm.value)
+    // console.log(this.myForm.value)
     this.us.register(this.myForm.value).subscribe(
       res=>{console.log(res)
       this.newcart(),
@@ -89,7 +89,7 @@ export class RegisterComponent implements OnInit {
     checkId(evevn){
       //console.log(this.myForm.value.id);
       this.us.toCheckId(this.myForm.value.id).subscribe( res => {
-       console.log(res)
+      //  console.log(res)
        if(res=='notgood'){
          // alert('This ID already exists. You can login with a password'),
          this.spanId ='This ID already exists. You can login with a password',
@@ -98,9 +98,9 @@ export class RegisterComponent implements OnInit {
         }else if(res=='good'){
           this.spanId=''
         }
-        console.log(this.spanId)
+        // console.log(this.spanId)
     },
-      error => console.log(error)
+      // error => console.log(error)
     
     )
       }
@@ -111,7 +111,7 @@ export class RegisterComponent implements OnInit {
           (res: any) => {
             
             },
-            err => console.log(err) 
+            // err => console.log(err) 
         )
       }
       

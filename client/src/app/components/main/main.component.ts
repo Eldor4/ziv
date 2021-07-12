@@ -26,9 +26,9 @@ export class MainComponent implements OnInit {
       (res: any) => {
         this.ys.count=res[0]?.amount
         // console.log(res[0].amount)
-        console.log(this.us?.loggedUser)
+        // console.log(this.us?.loggedUser)
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
 

@@ -71,7 +71,7 @@ export class LoginComponent implements OnInit {
 
           
         },
-        err => console.log(err) 
+        // err => console.log(err) 
         ),
        
         this.r.navigateByUrl('shopping')
@@ -95,7 +95,7 @@ sum(){
       
     },
     err=>{
-      console.log(err)
+      // console.log(err)
     }
     )
   }

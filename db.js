@@ -1,5 +1,3 @@
-
-
 const mysql = require("mysql");
 
 var dbConfig = {
@@ -7,7 +5,6 @@ var dbConfig = {
     user:"b29eebfb6587d8",
     password:"eb9fdaea",
     database:"heroku_28f7e683ee1119f"
-
 };
 // username : b29eebfb6587d8:
 // password : eb9fdaea

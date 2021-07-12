@@ -43,14 +43,14 @@ export class DialogComponent implements OnInit {
     this.cs.addTocart.Amount=this.numOfProduct,
     this.cs.addTocart.generalprice= this.data.p.price*this.numOfProduct,
     this.cs.addTocart.cart=this.us.loggedUser.cartid,
-     console.log(this.cs.addTocart);
+    //  console.log(this.cs.addTocart);
      this.cs.toNewProInCart(this.cs.addTocart).subscribe(
       (res: any) => {
-        console.log(res)
+        // console.log(res)
         this.cs.cartitem = res
       this.sum()
       },      
-      err => console.log(err)
+      // err => console.log(err)
       )
   }
  

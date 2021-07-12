@@ -28,7 +28,7 @@ export class HeadComponent implements OnInit {
       (res: any) => {
         this.ys.allproduct = res
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
   allProduct(){
@@ -36,7 +36,7 @@ export class HeadComponent implements OnInit {
       (res: any) => {
         this.ys.allproduct = res
       },
-      err => console.log(err)
+      // err => console.log(err)
     )
   }
   logout(){

@@ -56,7 +56,7 @@ openDialog(p){
     this.ys.toAddProductByAdmin.categoryid=p.categoryid
     this.ys.toAddProductByAdmin.price=p.price
     this.ys.toAddProductByAdmin.photo=p.photo
-    console.log(this.ys.toAddProductByAdmin)
+    // console.log(this.ys.toAddProductByAdmin)
     this.openEdit()
 }
 
@@ -64,8 +64,8 @@ openDialog(p){
 editPanel={
   open:true}
 openEdit(){
-  this.as.editPanel.open=this.editPanel.open,
-  console.log( this.as.editPanel.open)
+  this.as.editPanel.open=this.editPanel.open
+  // console.log( this.as.editPanel.open)
   
 
 }
