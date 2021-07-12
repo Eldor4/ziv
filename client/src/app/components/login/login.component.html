@@ -30,5 +30,7 @@
     <button (click)="toNewShoppingpage()" >Start New Buying</button>
 </div>
 <div *ngIf="us.loggedUser.role=='admin'"> 
-    <button (click)="toShoppingpage($event)">To operating area</button>
+    <button mat-raised-button class="greenbutton" (click)="toShoppingpage($event)">לאזור תפעולי</button>
 </div>
+
+<!-- color="#28f75c" -->
