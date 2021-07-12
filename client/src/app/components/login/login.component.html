@@ -21,16 +21,14 @@
     <button mat-raised-button color="primary" (click)="toRegister($event)">register</button>
 </div>
 <div *ngIf="us.loggedUser.role=='user'&&cs.status.status=='open'">
-    <button (click)="toShoppingpage($event)"> Continue Buying</button>
+    <button mat-raised-button class="greenbutton" (click)="toShoppingpage($event)"> המשך קניה</button>
 </div>
 <div *ngIf="us.loggedUser.role=='user'&&cs.status.status==''">
-    <button (click)="toNewShoppingpage()" >Start Buying</button>
+    <button mat-raised-button class="greenbutton" (click)="toNewShoppingpage()" >התחל קניה</button>
 </div>
 <div *ngIf="us.loggedUser.role=='user'&&cs.status.status=='close'">
-    <button (click)="toNewShoppingpage()" >Start New Buying</button>
+    <button mat-raised-button class="greenbutton" (click)="toNewShoppingpage()" >התחל קניה חדשה</button>
 </div>
 <div *ngIf="us.loggedUser.role=='admin'"> 
     <button mat-raised-button class="greenbutton" (click)="toShoppingpage($event)">לאזור תפעולי</button>
 </div>
-
-<!-- color="#28f75c" -->
